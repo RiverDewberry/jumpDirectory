@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+$1/dirSelect $HOME
+
+builtin cd $($1/read)
+#this is ~0.001 seconds faster than using cat
