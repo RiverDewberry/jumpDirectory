@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "./" > ./dir
+
+echo "What do you want to alias jumpDirectory to?"
+
+read ALIASNAME
+
+echo ""
+echo "Copy the next lines into ~/.bashrc"
+echo ""
+echo "# alias jumpDirectory to $ALIASNAME"
+echo "alias $ALIASNAME=\". $PWD/jumpDirectory $PWD\""
