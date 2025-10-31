@@ -250,7 +250,7 @@ int main(int argc, char **argv)
 
             for (int j = 0; j < i; j++)
             {
-                if (!valid[i]) continue;
+                if (!valid[j]) continue;
                 for (int k = j; k < i; k++)
                 {
                     if (!valid[k]) continue;
