@@ -12,6 +12,10 @@ all: build
 build:
 	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 	$(CC) -O3 -Wall ./src/fastread.c -o read
+
+buildFixed:
+	$(CC) $(CFLAGS) $(SRC) -ltinfo -o $(NAME)
+	$(CC) -O3 -Wall ./src/fastread.c -o read
 	
 clean:
 	rm -f $(NAME)
